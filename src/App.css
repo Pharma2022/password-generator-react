@@ -1,0 +1,223 @@
+:root{
+  --ff-karla:'Karla', sans-serif;
+  --ff-inter:'Inter',sans-serif;
+  --dark-navy-blue:#1F2937;
+  --navy-blue:#273549;
+  --white:#fff;
+  --white-secondary:#ECFDF5;
+  --gray:#6b7280;
+  --medium-gray:#D5D4D8;
+  --green-primary:#4ADF86;
+  --green-secondary : #10B981;
+  --green-tertiary:#55F991;
+  --night:#2b283a
+}
+
+*, *::before,*::after{
+  box-sizing: border-box;
+}
+
+body,html,h1,h2,h3,div,fieldset,legend,label,input,button,hr,span{
+  margin:0;
+  padding:0;
+}
+input,button{
+  outline: none;
+  border:none;
+
+}
+html{
+  font-size: .85rem;
+}
+
+/* Typography */
+
+body{
+  font-family: var(--ff-inter);
+}
+
+.title{
+  font-family: var(--ff-karla);
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color:var(--night);
+
+}
+.title.dark{
+  color: var(--white);
+}
+
+.green-text{
+  color: var(--green-secondary);
+}
+.green-text.dark{
+  color: var(--green-primary);
+}
+
+.subtitle,fieldset,label{
+  color: var(--gray);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.subtitle.dark,fieldset.dark,label.dark{
+  color: var(--medium-gray);
+
+}
+
+.generate-passwords{
+  font-size: 1rem;
+  font-family: var(--ff-inter);
+  font-weight: 500;
+  color: white;
+}
+
+
+.main{
+  background-color: var(--white-secondary);
+  height: 100vh;
+}
+.main.dark{
+  background-color: var(--dark-navy-blue);
+}
+
+/* Utility Classes */
+.container{
+  padding-inline: .75rem 1rem;
+  width: 100%;
+  margin-inline:auto;
+
+}
+
+@media(min-width: 500px){
+  
+  html{
+    font-size: .95rem;
+  }
+  .container{
+    padding-inline: 2rem;
+    ;
+    max-width: 600px;
+  }
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+.flex-row{
+  display: flex;
+}
+.wrap{
+  flex-wrap: wrap;
+}
+
+.space-between{
+  justify-content: space-between;    
+}
+.space-around{
+  justify-content: space-around;
+}
+.space-evenly{
+  justify-content: space-evenly;
+}
+.justify-center{
+  justify-content: center;   
+}
+.flex-start{
+  justify-content: flex-start;
+}
+.flex-end{
+  justify-content: flex-end;
+}
+.align-center{
+  align-items: center;    
+}
+.mx-auto{
+  margin-inline:auto;
+}
+.wrap{
+  flex-wrap: wrap;
+}
+.width-full{
+  width: 100%;
+  max-width: 100%;
+}
+
+.main{
+  gap: 1rem;
+  padding-block:1.75rem 1rem;
+}
+
+.switch-label{
+  font-size: .7rem;
+  gap:.5rem;
+  width: fit-content;
+  font-weight: 500;
+}
+.btn-primary{
+  padding: 0.5625rem 1rem;
+  border-radius: 0.375rem;
+  background-color: var(--green-secondary);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  margin: auto;
+}
+
+
+
+.btn:hover,.btn:focus{
+  cursor: pointer;
+  text-decoration: underline;
+  opacity: 0.8;
+  scale: 1.05;
+}
+
+fieldset{
+  text-align: center;
+}
+
+.checkbox-container{
+  padding: 1rem;
+}
+
+.checkbox-container>label{
+  
+  margin-bottom: .65rem;
+  text-align: center;
+  gap:2rem;
+}
+
+.pass-length-label{
+  margin-block: .7rem;
+
+  text-align: center;
+  gap:1.5rem;
+  padding: 1rem;
+
+
+}
+.pass-length{
+  accent-color: var(--green-tertiary);
+
+}
+
+.passwords-container{
+  gap:1.2rem;
+
+}
+.password{
+  min-width: 12.5rem;
+  min-height: 2.2rem;
+  flex: 1;
+  background-color: var(--navy-blue);
+  color:var(--green-tertiary);
+  border-radius: 0.375rem;
+  padding: 0.5625rem 1rem;
+  text-align: center;
+}
+
+
+hr{
+  margin-block: 1rem;
+}
