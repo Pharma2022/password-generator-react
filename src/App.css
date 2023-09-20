@@ -181,10 +181,10 @@ fieldset{
   padding: 1rem;
 }
 
-.checkbox-container>label{
-  
+.checkbox-label{
+  margin-inline:auto;
   margin-bottom: .65rem;
-  text-align: center;
+  
   gap:2rem;
 }
 
