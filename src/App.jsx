@@ -17,9 +17,9 @@ function App() {
   const [arr,setArr]=useState(lowercaseArr)
   const [{pass1,pass2},setPassword]=useState({pass1:"",pass2:""})
   
-  
+  const copy=async(str)=>await navigator.clipboard.writeText(str)
   const getRandomNumberFromArr=()=>Math.floor(Math.random()*arr.length)
-
+  
   const getPassword=()=>{
     let pass=""
     for (let i = 0; i<passLength; i++){
@@ -97,8 +97,8 @@ function App() {
 
         <hr/>
         <div className="container passwords-container flex-row wrap">
-          <Password>{pass1}</Password>
-          <Password>{pass2}</Password>
+          <Password onClick={()=>copy(pass1)}>{pass1}</Password>
+          <Password onClick={()=>copy(pass2)}>{pass2}</Password>
         </div>
 
       </form>
