@@ -8,7 +8,7 @@ function App() {
   const {isDark,darkClass}=useToggleContext()  
    
   return (
-    <div className={`main ${isDark&&darkClass} flex-col`}>
+    <div className={`main ${isDark&&darkClass} flex-col `}>
       <Header/>
       <Form/>     
       
