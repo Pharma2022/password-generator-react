@@ -14,7 +14,7 @@ const Form = () => {
     const {isDark,darkClass}=useToggleContext()
   return (
     <form className="container flex-col" onSubmit={renderPasswords}>
-        <fieldset className={`flex-col ${isDark&&darkClass}`}>
+        <fieldset className={`flex-col ${isDark&&darkClass} mx-auto`}>
           <legend>Strengthen your passwords. Include:</legend>
           <div className="checkbox-container flex-col">
             <Checkbox 

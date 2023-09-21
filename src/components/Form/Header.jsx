@@ -10,7 +10,7 @@ const Header = () => {
     <>
          
          <h1 className={`title ${isDark&&darkClass} container`}>Generate a <span className="green-text">Random Password</span></h1>
-         <div className="container flex-row space-between align-center">
+         <div className="container flex-row space-around align-center">
             <h3 className={`subtitle ${isDark&&darkClass}`}>Never use an insecure password again </h3>
             <DarkModeBtn/>
          </div>
